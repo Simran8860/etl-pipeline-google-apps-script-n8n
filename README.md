@@ -216,19 +216,25 @@ The solution includes:
 
 ### Main Workflow
 
-*Add workflow screenshot here*
+<img width="1665" height="736" alt="Main n8n Workflow" src="https://github.com/user-attachments/assets/ae0c41a0-9905-4d00-8561-b6954a07222f" />
+
 
 ### Successful Execution
 
-*Add execution screenshot here*
+<img width="1802" height="763" alt="successful-execution" src="https://github.com/user-attachments/assets/803e617d-136b-4440-9419-5ca81f7a3b55" />
+
 
 ### Error Workflow
 
-*Add error workflow screenshot here*
+<img width="1579" height="805" alt="error-workflow" src="https://github.com/user-attachments/assets/ef7b6b92-1d47-46d9-9aef-c7baf0225d9b" />
 
-### Output Files
 
-*Add output screenshot here*
+### apps script Files
+
+<img width="1920" height="828" alt="apps-script-project" src="https://github.com/user-attachments/assets/a5a363d8-5b6f-4ac6-9eb8-86a8e1b8024b" />
+
+
+
 
 ---
 
@@ -246,9 +252,6 @@ Enable access for the required users.
 
 Create a Script Property.
 
-```text
-MEDISELLER_API_KEY=your_api_key
-```
 
 ---
 
@@ -314,5 +317,3 @@ This project is shared for educational and portfolio purposes.
 **Simran Tyagi**
 
 LinkedIn: https://www.linkedin.com/in/simran-tyagi/
-
-GitHub: https://github.com/Simrantyagi19
