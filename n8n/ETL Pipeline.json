@@ -1,0 +1,315 @@
+{
+  "name": "Mediseller ETL Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -848,
+        -608
+      ],
+      "id": "3826a5e7-7b01-40c3-9279-5e2ebea89d2f",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "fileSelector": "/home/node/.n8n-files/crm_export.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -624,
+        -320
+      ],
+      "id": "0fc73495-a119-42a8-abf5-93de6ebf9604",
+      "name": "Read CRM JSON"
+    },
+    {
+      "parameters": {
+        "operation": "fromJson",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -400,
+        -320
+      ],
+      "id": "d6ba7785-b26e-448a-9b37-ec3978680fa9",
+      "name": "Extract CRM JSON"
+    },
+    {
+      "parameters": {
+        "fileSelector": "/home/node/.n8n-files/linkedin_leads.csv",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -624,
+        -512
+      ],
+      "id": "bd9db611-a63a-44b7-9a8f-d80d4bdf094c",
+      "name": "Read LinkedIn CSV"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -400,
+        -512
+      ],
+      "id": "ddaa3039-4fa0-4063-9d9c-97a24725c01b",
+      "name": "Extract LinkedIn CSV"
+    },
+    {
+      "parameters": {
+        "fileSelector": "/home/node/.n8n-files/webinar_signups.csv",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -624,
+        -704
+      ],
+      "id": "838f0b8f-061f-4fc4-aa5a-cf8ca989aab5",
+      "name": "Read Webinar CSV"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -400,
+        -704
+      ],
+      "id": "90419442-3b61-4b38-91a2-585c9f5bc44b",
+      "name": "Extract Webinar CSV"
+    },
+    {
+      "parameters": {
+        "fileSelector": "/home/node/.n8n-files/partner_referrals.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -624,
+        -896
+      ],
+      "id": "46002696-a25d-4179-9206-56f57d1b2c5f",
+      "name": "Read Partner JSON"
+    },
+    {
+      "parameters": {
+        "operation": "fromJson",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -400,
+        -896
+      ],
+      "id": "ad4adc28-6385-4bac-8dcc-f86186441835",
+      "name": "Extract Partner JSON"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "numberInputs": 4,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -176,
+        -640
+      ],
+      "id": "018c0750-9d73-4e7b-aa45-6fe2d1a8bc65",
+      "name": "Merge Sources"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://script.google.com/macros/s/AKfycbwsINIPJ1AzsqIczOw8SEXu8i7Q2c3alKJqbgrCPhA4GQhhaMGklo8tFxrxodyGe-lyUg/exec",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "apiKey",
+              "value": "Mediseller123"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "=json",
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "jsonBody": "={{\n{\n  crm: $json.data,\n  linkedin: $json.data_1,\n  webinar: $json.data_2,\n  partner: $json.data_3\n}\n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        48,
+        -608
+      ],
+      "id": "18421f32-468f-400a-835b-51a039637cc4",
+      "name": "Send to ETL API"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Read CRM JSON",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Partner JSON",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read LinkedIn CSV",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Webinar CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read CRM JSON": {
+      "main": [
+        [
+          {
+            "node": "Extract CRM JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract CRM JSON": {
+      "main": [
+        [
+          {
+            "node": "Merge Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read LinkedIn CSV": {
+      "main": [
+        [
+          {
+            "node": "Extract LinkedIn CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract LinkedIn CSV": {
+      "main": [
+        [
+          {
+            "node": "Merge Sources",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read Webinar CSV": {
+      "main": [
+        [
+          {
+            "node": "Extract Webinar CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Webinar CSV": {
+      "main": [
+        [
+          {
+            "node": "Merge Sources",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Read Partner JSON": {
+      "main": [
+        [
+          {
+            "node": "Extract Partner JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Partner JSON": {
+      "main": [
+        [
+          {
+            "node": "Merge Sources",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Merge Sources": {
+      "main": [
+        [
+          {
+            "node": "Send to ETL API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "a767e620-cd41-4a73-9493-22c0094f46aa",
+  "meta": {
+    "instanceId": "b04a39cf89a0f3c21fabc4654cdd18fe97a4be1046809fb81c2fda947a0557ff"
+  },
+  "nodeGroups": [],
+  "id": "GMTeNW6fEopzWr76",
+  "tags": []
+}
