@@ -1,6 +1,6 @@
 {
   "name": "Mediseller ETL Pipeline",
-  "nodes": [
+  "nodes": [ 
     {
       "parameters": {},
       "type": "n8n-nodes-base.manualTrigger",
