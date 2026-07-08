@@ -75,7 +75,7 @@ Partner (JSON)                           |
 │   └── main.gs
 │
 ├── n8n
-│   ├── workflow.json
+│   ├── ETL Pipeline.json
 │   └── error-workflow.json
 │
 ├── Output
