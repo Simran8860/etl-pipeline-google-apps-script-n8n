@@ -23,7 +23,7 @@
       ],
       "consent": false
     },
-    "_validation": {
+    "_validation": { 
       "valid": false,
       "errors": [
         "Phone too short (3 digits, minimum 7): \"123\""
