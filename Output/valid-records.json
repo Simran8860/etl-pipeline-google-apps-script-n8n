@@ -1,0 +1,602 @@
+[
+  {
+    "lead": {
+      "name": "David1 Brown",
+      "email": "david1@gmail.com",
+      "phone": "7777700001",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme1",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.488Z",
+      "processed_at": "2026-06-21T19:08:07.488Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David2 Brown",
+      "email": "david2@gmail.com",
+      "phone": "7777700002",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme2",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.489Z",
+      "processed_at": "2026-06-21T19:08:07.489Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David3 Brown",
+      "email": "david3@gmail.com",
+      "phone": "7777700003",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme3",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.491Z",
+      "processed_at": "2026-06-21T19:08:07.491Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David4 Brown",
+      "email": "david4@gmail.com",
+      "phone": "7777700004",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme4",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.492Z",
+      "processed_at": "2026-06-21T19:08:07.492Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David5 Brown",
+      "email": "david5@gmail.com",
+      "phone": "7777700005",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme5",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.493Z",
+      "processed_at": "2026-06-21T19:08:07.493Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David6 Brown",
+      "email": "david6@gmail.com",
+      "phone": "7777700006",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme6",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.495Z",
+      "processed_at": "2026-06-21T19:08:07.495Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David7 Brown",
+      "email": "david7@gmail.com",
+      "phone": "7777700007",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme7",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.496Z",
+      "processed_at": "2026-06-21T19:08:07.496Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David8 Brown",
+      "email": "david8@gmail.com",
+      "phone": "7777700008",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme8",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.498Z",
+      "processed_at": "2026-06-21T19:08:07.498Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David9 Brown",
+      "email": "david9@gmail.com",
+      "phone": "7777700009",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme9",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.499Z",
+      "processed_at": "2026-06-21T19:08:07.499Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David10 Brown",
+      "email": "david10@gmail.com",
+      "phone": "7777700010",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme10",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.500Z",
+      "processed_at": "2026-06-21T19:08:07.500Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David11 Brown",
+      "email": "david11@gmail.com",
+      "phone": "7777700011",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme11",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.502Z",
+      "processed_at": "2026-06-21T19:08:07.502Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David12 Brown",
+      "email": "david12@gmail.com",
+      "phone": "7777700012",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme12",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.503Z",
+      "processed_at": "2026-06-21T19:08:07.503Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David13 Brown",
+      "email": "david13@gmail.com",
+      "phone": "7777700013",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme13",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.504Z",
+      "processed_at": "2026-06-21T19:08:07.504Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David14 Brown",
+      "email": "david14@gmail.com",
+      "phone": "7777700014",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme14",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.505Z",
+      "processed_at": "2026-06-21T19:08:07.505Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David15 Brown",
+      "email": "david15@gmail.com",
+      "phone": "7777700015",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme15",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.507Z",
+      "processed_at": "2026-06-21T19:08:07.507Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David16 Brown",
+      "email": "david16@gmail.com",
+      "phone": "7777700016",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme16",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.508Z",
+      "processed_at": "2026-06-21T19:08:07.508Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David17 Brown",
+      "email": "david17@gmail.com",
+      "phone": "7777700017",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme17",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.510Z",
+      "processed_at": "2026-06-21T19:08:07.510Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David18 Brown",
+      "email": "david18@gmail.com",
+      "phone": "7777700018",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme18",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.511Z",
+      "processed_at": "2026-06-21T19:08:07.511Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David19 Brown",
+      "email": "david19@gmail.com",
+      "phone": "7777700019",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme19",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.512Z",
+      "processed_at": "2026-06-21T19:08:07.512Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "lead": {
+      "name": "David20 Brown",
+      "email": "david20@gmail.com",
+      "phone": "7777700020",
+      "job_title": "Architect",
+      "country": "USA",
+      "city": ""
+    },
+    "company": {
+      "name": "Acme20",
+      "industry": "",
+      "website": "",
+      "size": ""
+    },
+    "metadata": {
+      "source": "CRM",
+      "created_at": "2026-06-21T19:08:07.514Z",
+      "processed_at": "2026-06-21T19:08:07.514Z",
+      "tags": [
+        "crm-import"
+      ],
+      "consent": false
+    },
+    "_validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]
